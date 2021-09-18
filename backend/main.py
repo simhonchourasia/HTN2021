@@ -16,5 +16,15 @@ api = Api(app)
 def index(): 
     return "Hello, World!"
 
+
+@app.route('/dummy', methods=['GET']) 
+def index2():
+     return "Dummy endpoint!"
+
+
+# @app.route('/time', method=['GET'])
+# def get_current_time():
+#     return {'time': time.time()}
+
 if __name__ == "__main__":
     app.run(debug=True)
