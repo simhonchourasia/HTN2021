@@ -3,6 +3,9 @@ import MediaControlCard from './Components/MediaControlCard';
 import Results from './Components/Result';
 import './App.css';
 import { Result } from 'postcss';
+import { Table } from '@mui/material';
+import { TableBody } from '@mui/material';
+import { TableContainer } from '@mui/material';
 
 function App() {
   return (
@@ -20,7 +23,11 @@ function App() {
         >
           Learn React
         </a>
-        <Results></Results>
+        <TableContainer sx={{width: "60%", maxWidth: 500, maxHeight: 400}}>
+          <TableBody>
+            <Results></Results>
+          </TableBody>
+        </TableContainer>
       </header>
     </div>
   );
