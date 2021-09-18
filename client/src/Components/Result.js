@@ -33,15 +33,15 @@ function Results() {
     if (!loading) {
         return (
             <div>
-                <CardMedia
+                {/* <CardMedia
                     component="img"
                     sx={ { width: 151 } }
                     image="/static/images/cards/live-from-space.jpg"
                     alt="Live from space album cover"
-                />
+                /> */}
                 { tracks.map((track) => {
                     console.log("andlkasndkjsa dbfcpkjasdbasd fpkabs");
-                    return <br></br>
+                    return <MediaControlCard track={ track.name } artist={ events.artist }></MediaControlCard>
                 }) }
             </div>
         );
