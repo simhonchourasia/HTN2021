@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
+import { TableRow } from '@mui/material';
 
 export default function MediaControlCard({
 track,
@@ -17,8 +18,9 @@ artist
 ) {
   const theme = useTheme();
   return (
-    <Card sx={{ display: 'flex' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+    <TableRow>
+    <Card square="true" sx={{ display: 'flex', margin: 'auto'}}>
+      <Box sx={{ display: 'flex', flexDirection: 'column' , alignItems: 'center', width: '300%'}}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Typography component="div" variant="h5">
             {track}
@@ -27,18 +29,25 @@ artist
             {artist}
           </Typography>
         </CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1}}>
           <IconButton aria-label="previous">
             {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
           </IconButton>
           <IconButton aria-label="play/pause">
-            <PlayArrowIcon sx={{ height: 38, width: 38 }} />
+            <PlayArrowIcon sx={{ height: 38, width: 38}} />
           </IconButton>
           <IconButton aria-label="next">
             {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
           </IconButton>
         </Box>
       </Box>
+      <CardMedia
+        component="img"
+        sx={{}}
+        image="/static/images/cards/live-from-space.jpg"
+        alt="Live from space album cover"
+      />
     </Card>
+    </TableRow>
   );
 }

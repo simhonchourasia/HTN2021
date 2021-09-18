@@ -41,7 +41,7 @@ function Results() {
                 />
                 { tracks.map((track) => {
                     console.log("andlkasndkjsa dbfcpkjasdbasd fpkabs");
-                    return <br><MediaControlCard track={ track.name } artist={ events.artist }></MediaControlCard></br>
+                    return <br></br>
                 }) }
             </div>
         );
