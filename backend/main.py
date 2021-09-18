@@ -21,6 +21,9 @@ def index():
 def index2():
      return "Dummy endpoint!"
 
+@app.route('/results', methods=['GET']) 
+def result():
+    return {"artist": "young umar", "tracks": [{"name": "bang me in"}, {"name": "pew pew pew"}, {"name": "jennifer"}]}
 
 # @app.route('/time', method=['GET'])
 # def get_current_time():

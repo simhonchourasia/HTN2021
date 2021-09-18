@@ -1,5 +1,8 @@
 import logo from './logo.svg';
+import MediaControlCard from './Components/MediaControlCard';
+import Results from './Components/Result';
 import './App.css';
+import { Result } from 'postcss';
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <Results></Results>
       </header>
     </div>
   );
