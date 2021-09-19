@@ -10,6 +10,7 @@ import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import { TableRow } from '@mui/material';
+import loverboy from '../Assets/loverboy.png'
 
 export default function MediaControlCard({
 track,
@@ -43,8 +44,8 @@ artist
       </Box>
       <CardMedia
         component="img"
-        sx={{}}
-        image="/static/images/cards/live-from-space.jpg"
+        sx={{width: '40%', height: '40%'}}
+        image={loverboy}
         alt="Live from space album cover"
       />
     </Card>
