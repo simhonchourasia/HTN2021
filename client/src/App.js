@@ -48,7 +48,6 @@ function App() {
         <Route path='/about' />
         <div className = "events-list-page">
         <NameField></NameField>
-        <ArtistField></ArtistField>
         <TableContainer sx={{width: "60%", maxWidth: 500, maxHeight: 400}}>
           <TableBody>
             <Results></Results>
