@@ -23,7 +23,7 @@ def index2():
 
 @app.route('/results', methods=['GET']) 
 def result():
-    return {"artist": "young umar", "tracks": [{"name": "bang me in"}, {"name": "pew pew pew"}, {"name": "jennifer"}]}
+    return {"artist": "young umar", "tracks": [{"name": "bang me in"}, {"name": "pew pew pew"}, {"name": "jennifer"}, {"name": "Serena"}, {"name": "Katie"}]}
 
 # @app.route('/time', method=['GET'])
 # def get_current_time():
