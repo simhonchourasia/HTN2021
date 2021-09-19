@@ -13,6 +13,7 @@ import background1 from './Assets/Capture1.PNG';
 import background2 from './Assets/Capture2.PNG';
 import background3 from './Assets/Capture3.PNG';
 import zIndex from '@mui/material/styles/zIndex';
+import ArtistField from './Components/ArtistField';
 
 function App() {
   var background = background1;
@@ -47,6 +48,7 @@ function App() {
         <Route path='/about' />
         <div className = "events-list-page">
         <NameField></NameField>
+        <ArtistField></ArtistField>
         <TableContainer sx={{width: "60%", maxWidth: 500, maxHeight: 400}}>
           <TableBody>
             <Results></Results>
